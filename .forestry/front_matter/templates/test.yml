@@ -2,6 +2,7 @@
 label: test
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: textarea
 pages:
 - content/testpage.md
