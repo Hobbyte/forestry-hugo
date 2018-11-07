@@ -8,6 +8,21 @@ theme = "hugo-theme-hamburg-new"
 	[[menu.Homepage1]]
 		identifier = "petinsurance"
 		title = "Pet Insurance"
+		[[menu.Homepage1.1]]
+			identifier = "petinsurancegroup"
+			title = "Pet Insurance"
+			[[menu.Homepage1.1.1]]
+			identifier = "doginsurance"
+			title = "Dog Insurance"
+			url = "/dog-insurance"
+			[[menu.Homepage1.1.2]]
+			identifier = "catinsurance"
+			title = "Cat Insurance"
+			url = "/cat-insurance"
+			[[menu.Homepage1.1.3]]
+			identifier = "petwellnessplans"
+			title = "Pet Wellness Plans"
+			url = "/routine-care"
 	[[menu.Homepage2]]
 		identifier = "whypetsbest"
 		title = "Why Pets Best"
