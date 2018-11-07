@@ -5,7 +5,7 @@ theme = "hugo-theme-hamburg-new"
 [params]
 	assetsPath = ""
 [menu]
-	[[menu.Homepage3]]
+	[[menu.Homepage1]]
 		identifier = "petinsurance"
 		title = "Pet Insurance"
 	[[menu.Homepage2]]
