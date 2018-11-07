@@ -1,4 +1,6 @@
 baseURL = ""
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "hugo-theme-hamburg"
+theme = "hugo-theme-hamburg-new"
+[params]
+	assetsPath = ""

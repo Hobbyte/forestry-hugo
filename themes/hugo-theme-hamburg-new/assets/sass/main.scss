@@ -1,0 +1,246 @@
+$breakpoints: (
+	'xs-phone': 320px,
+	'phone': 480px,
+	'tablet': 768px,
+	'desktop': 1024px,
+	'widescreen': 1280px,
+	'l-widescreen': 1800px
+);
+
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@import 'vendors/include-media';
+@import 'vendors/normalize';
+
+@import 'vendors/icomoon';
+@import 'vendors/fonts';
+
+@import 'base/functions';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/forms';
+
+@import 'vendors/jcf';
+@import 'vendors/lightbox';
+
+@import 'layouts/footer';
+@import 'layouts/header';
+@import 'layouts/common';
+@import 'layouts/modal';
+
+
+body {
+	min-width: 320px;
+
+	@include media('<l-widescreen') {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	@include media('<desktop') {
+		font-size: 24px;
+		line-height: 28px;
+	}
+}
+
+.resize-active * {
+	transition: none !important;
+}
+
+#wrapper {
+	overflow: hidden;
+	position: relative;
+
+	&:before {
+		@include media('<desktop') {
+			content:"";
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 59px;
+			background: rgba(0,0,0,0.5);
+			transform: translateX(100%);
+			transition: transform 0.3s linear;
+			z-index: 999;
+		}
+	}
+
+	&:after {
+		@include media('<desktop') {
+			content:"";
+			z-index: 999;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			visibility: hidden;
+			background: rgba(0,0,0,0.7);
+			transition: opacity 0.3s linear, visibility 0.3s linear;
+		}
+	}
+}
+
+.holder {
+	@extend %clearfix;
+	padding: 0 10px;
+	margin: 0 auto;
+	max-width: 1741px;
+
+	@include media('>=widescreen') {
+		max-width: 1178px;
+	}
+
+	@include media('>=l-widescreen') {
+		max-width: 1741px;
+	}
+
+	@include media('<desktop') {
+		padding: 0 25px;
+	}
+
+	@include media('<tablet') {
+		padding: 0 10px;
+	}
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+.view-desktop {
+	@include media('<tablet') {
+		display: none !important;
+	}
+}
+
+.view-mobile {
+	@include media('>=tablet') {
+		display: none !important;
+	}
+}
+
+.comes-from-bottom {
+	@include media('>=desktop') {
+		transform: translateY(100px);
+		opacity: 0;
+		transition: transform 0.5s linear, opacity 0.5s linear;
+	}
+
+	&.with-delay {
+		@include media('>=desktop') {
+			transition: transform 0.5s linear 0.5s, opacity 0.5s linear 0.5s;
+		}
+	}
+
+	&.with-2x-delay {
+		@include media('>=desktop') {
+			transition: transform 0.5s linear 1s, opacity 0.5s linear 1s;
+		}
+	}
+
+	.in-viewport & {
+		@include media('>=desktop') {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+}
+
+
+.fade-effect {
+	@include media('>=desktop') {
+		opacity: 0;
+		transition: opacity 0.5s linear;
+	}
+
+	&.with-delay {
+		@include media('>=desktop') {
+			transition: opacity 0.5s linear 0.5s;
+		}
+	}
+
+	&.with-2x-delay {
+		@include media('>=desktop') {
+			transition: opacity 0.5s linear 1s;
+		}
+	}
+
+	.in-viewport & {
+		@include media('>=desktop') {
+			opacity: 1;
+		}
+	}
+}
+
+.slide-from-left {
+	@include media('>=desktop') {
+		position: relative;
+		left: -100px;
+		opacity: 0;
+		transition: left 0.5s linear, opacity 0.5s linear;
+	}
+
+	&.with-delay {
+		@include media('>=desktop') {
+			transition: left 0.5s linear 0.5s, opacity 0.5s linear 0.5s;
+		}
+	}
+
+	&.with-2x-delay {
+		@include media('>=desktop') {
+			transition: left 0.5s linear 1s, opacity 0.5s linear 1s;
+		}
+	}
+
+	.in-viewport & {
+		@include media('>=desktop') {
+			left: 0;
+			opacity: 1;
+		}
+	}
+}
+
+.slide-from-right {
+	@include media('>=desktop') {
+		position: relative;
+		right: -100px;
+		opacity: 0;
+		transition: right 0.5s linear, opacity 0.5s linear;
+	}
+
+	&.with-delay {
+		@include media('>=desktop') {
+			transition: right 0.5s linear 0.5s, opacity 0.5s linear 0.5s;
+		}
+	}
+
+	&.with-2x-delay {
+		@include media('>=desktop') {
+			transition: right 0.5s linear 1s, opacity 0.5s linear 1s;
+		}
+	}
+
+	.in-viewport & {
+		@include media('>=desktop') {
+			right: 0;
+			opacity: 1;
+		}
+	}
+}
