@@ -4,3 +4,13 @@ title = "My New Hugo Site"
 theme = "hugo-theme-hamburg-new"
 [params]
 	assetsPath = ""
+[menu]
+	[[menu.main]]
+		identifier = "petinsurance"
+		title = "Pet Insurance"
+	[[menu.main2]]
+		identifier = "whypetsbest"
+		title = "Why Pets Best"
+	[[menu.main3]]
+		identifier = "resources"
+		title = "Resources"
