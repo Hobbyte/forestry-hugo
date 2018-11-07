@@ -5,4 +5,5 @@ is_partial: false
 fields:
 - type: textarea
 pages:
+- content/homepage.md
 - content/testpage.md
