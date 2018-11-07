@@ -3,10 +3,25 @@ languageCode = "en-us"
 theme = "hugo-theme-hamburg-new"
 title = "My New Hugo Site"
 [[menu.Homepage1]]
+name = "Pet Wellness Plans"
+parent = "Pet Insurance"
+url = "/routine-care"
+weight = 3
+[[menu.Homepage1]]
+name = "Cat Insurance"
+parent = "Pet Insurance"
+url = "/cat-insurance"
+weight = 2
+[[menu.Homepage1]]
+name = "Dog Insurance"
+parent = "Pet Insurance"
+url = "/dog-insurance"
+weight = 1
+[[menu.Homepage1]]
 identifier = "petinsurance"
-name = "Test"
+name = "Pet Insurance"
 title = "Pet Insurance"
-url = "test"
+url = "javascript:void(0);"
 weight = 1
 [[menu.Homepage1.1]]
 identifier = "petinsurancegroup"
