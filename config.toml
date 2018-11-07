@@ -5,12 +5,12 @@ theme = "hugo-theme-hamburg-new"
 [params]
 	assetsPath = ""
 [menu]
-	[[menu.main]]
+	[[menu.Homepage3]]
 		identifier = "petinsurance"
 		title = "Pet Insurance"
-	[[menu.main2]]
+	[[menu.Homepage2]]
 		identifier = "whypetsbest"
 		title = "Why Pets Best"
-	[[menu.main3]]
+	[[menu.Homepage3]]
 		identifier = "resources"
 		title = "Resources"
