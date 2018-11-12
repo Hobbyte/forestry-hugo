@@ -2,75 +2,77 @@ baseURL = ""
 languageCode = "en-us"
 theme = "pb"
 title = "Pets Best"
-[[menu.main]]
-name = "Understanding Pet Insurance Premiums"
-parent = "Premiums"
-url = "/understanding-pet-insurance-premiums"
-weight = 2
-[[menu.main]]
-name = "Pet Insurance Cost"
-parent = "Premiums"
-url = "/pet-insurance-cost"
-weight = 1
-[[menu.main]]
-identifier = "premiumssubhead"
-name = "Premiums"
-parent = "Pet Insurance"
-title = "Premiums"
-weight = 3
-[[menu.main]]
-name = "FAQ"
-parent = "Coverage"
-url = "/faq"
-weight = 4
-[[menu.main]]
-name = "24 Hour Vet Hotline"
-parent = "Coverage"
-url = "/24-7-pet-helpline"
-weight = 3
-[[menu.main]]
-name = "How to Choose A Plan"
-parent = "Coverage"
-url = "/choose-plan"
-weight = 2
-[[menu.main]]
-name = "Pet Insurance 101"
-parent = "Coverage"
-url = "/pet-insurance-101"
-weight = 1
-[[menu.main]]
-identifier = "coveragesubhead"
-name = "Coverage"
-parent = "Pet Insurance"
-title = "Coverage"
-url = "/coverage"
-weight = 2
+[params]
+assetsPath = ""
 [[menu.main]]
 name = "Pet Wellness Plans"
-parent = "Pet Insurance"
+parent = "petinsurancesubhead"
 url = "/routine-care"
 weight = 3
 [[menu.main]]
 name = "Cat Insurance"
-parent = "Pet Insurance"
+parent = "petinsurancesubhead"
 url = "/cat-insurance"
 weight = 2
 [[menu.main]]
 name = "Dog Insurance"
-parent = "Pet Insurance"
+parent = "petinsurancesubhead"
 url = "/dog-insurance"
 weight = 1
 [[menu.main]]
 identifier = "petinsurancesubhead"
 name = "Pet Insurance"
-parent = "Pet Insurance"
+parent = "petinsurance"
 title = "Pet Insurance"
+url = ""
 weight = 1
 [[menu.main]]
+identifier = "coveragesubhead"
+name = "Coverage"
+parent = "petinsurance"
+title = "Coverage"
+url = "/coverage"
+weight = 2
+[[menu.main]]
+name = "Pet Insurance 101"
+parent = "coveragesubhead"
+url = "/pet-insurance-101"
+weight = 1
+[[menu.main]]
+name = "How to Choose A Plan"
+parent = "coveragesubhead"
+url = "/choose-plan"
+weight = 2
+[[menu.main]]
+name = "24 Hour Vet Hotline"
+parent = "coveragesubhead"
+url = "/24-7-pet-helpline"
+weight = 3
+[[menu.main]]
+name = "FAQ"
+parent = "coveragesubhead"
+url = "/faq"
+weight = 4
+[[menu.main]]
+identifier = "premiumssubhead"
+name = "Premiums"
+parent = "petinsurance"
+title = "Premiums"
+url = ""
+weight = 3
+[[menu.main]]
+name = "Pet Insurance Cost"
+parent = "premiumssubhead"
+url = "/pet-insurance-cost"
+weight = 1
+[[menu.main]]
+name = "Understanding Pet Insurance Premiums"
+parent = "premiumssubhead"
+url = "/understanding-pet-insurance-premiums"
+weight = 2
+[[menu.main]]
 identifier = "petinsurance"
-name = "Pet Insurance 1"
+name = "Pet Insurance"
 title = "Pet Insurance"
 url = "javascript:void(0);"
-weight = 1
-[params]
-assetsPath = ""
+weight = 2
