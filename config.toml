@@ -2,18 +2,22 @@ baseURL = ""
 languageCode = "en-us"
 theme = "pb"
 title = "Pets Best"
-[menu]
-	[[menu.main]]
-	identifier = "petinsurance"
-	name = "Pet Insurance"
-	title = "Pet Insurance"
-	url = "javascript:void(0);"
-	weight = 1
-	[[menu.main]]
-	parent = "petinsurance"
-	name = "Dog Insurance"
-	title = "Dog Insurance"
-	url = "/dog-insurance"
-	weight = 1
+[[menu.main]]
+name = "Test"
+parent = "Dog Insurance"
+url = "/test"
+weight = 1
+[[menu.main]]
+name = "Dog Insurance"
+parent = "petinsurance"
+title = "Dog Insurance"
+url = "/dog-insurance"
+weight = 1
+[[menu.main]]
+identifier = "petinsurance"
+name = "Pet Insurance"
+title = "Pet Insurance"
+url = "javascript:void(0);"
+weight = 2
 [params]
 assetsPath = ""
