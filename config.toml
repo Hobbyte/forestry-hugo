@@ -2,6 +2,8 @@ baseURL = ""
 languageCode = "en-us"
 theme = "pb"
 title = "Pets Best"
+[params]
+assetsPath = ""
 [[menu.main]]
 name = "Pet Wellness Plans"
 parent = "petinsurancesubhead"
@@ -74,5 +76,3 @@ name = "Pet Insurance"
 title = "Pet Insurance"
 url = "javascript:void(0);"
 weight = 2
-[params]
-assetsPath = ""
