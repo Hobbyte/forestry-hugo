@@ -1,50 +1,19 @@
 baseURL = ""
 languageCode = "en-us"
-theme = "hugo-theme-hamburg-new"
-title = "My New Hugo Site"
-[[menu.Homepage1]]
-name = "Pet Wellness Plans"
-parent = "Pet Insurance"
-url = "/routine-care"
-weight = 3
-[[menu.Homepage1]]
-name = "Cat Insurance"
-parent = "Pet Insurance"
-url = "/cat-insurance"
-weight = 2
-[[menu.Homepage1]]
-name = "Dog Insurance"
-parent = "Pet Insurance"
-url = "/dog-insurance"
-weight = 1
-[[menu.Homepage1]]
-identifier = "petinsurance"
-name = "Pet Insurance"
-title = "Pet Insurance"
-url = "javascript:void(0);"
-weight = 1
-[[menu.Homepage1.1]]
-identifier = "petinsurancegroup"
-title = "Pet Insurance"
-[[menu.Homepage1.1.1]]
-identifier = "doginsurance"
-title = "Dog Insurance"
-url = "/dog-insurance"
-[[menu.Homepage1.1.2]]
-identifier = "catinsurance"
-title = "Cat Insurance"
-url = "/cat-insurance"
-[[menu.Homepage1.1.3]]
-identifier = "petwellnessplans"
-title = "Pet Wellness Plans"
-url = "/routine-care"
-[[menu.Homepage2]]
-identifier = "whypetsbest"
-title = "Why Pets Best"
-weight = 1
-[[menu.Homepage3]]
-identifier = "resources"
-title = "Resources"
-weight = 1
+theme = "pb"
+title = "Pets Best"
+[menu]
+	[[menu.main]]
+	identifier = "petinsurance"
+	name = "Pet Insurance"
+	title = "Pet Insurance"
+	url = "javascript:void(0);"
+	weight = 1
+	[[menu.main]]
+	parent = "petinsurance"
+	name = "Dog Insurance"
+	title = "Dog Insurance"
+	url = "/dog-insurance"
+	weight = 1
 [params]
 assetsPath = ""
