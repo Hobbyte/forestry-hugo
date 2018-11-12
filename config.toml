@@ -3,16 +3,71 @@ languageCode = "en-us"
 theme = "pb"
 title = "Pets Best"
 [[menu.main]]
-name = "Test"
-parent = "Dog Insurance"
-url = "/test"
-weight = 1
+name = "Pet Wellness Plans"
+parent = "petinsurancesubhead"
+url = "/routine-care"
+weight = 3
+[[menu.main]]
+name = "Cat Insurance"
+parent = "petinsurancesubhead"
+url = "/cat-insurance"
+weight = 2
 [[menu.main]]
 name = "Dog Insurance"
-parent = "petinsurance"
-title = "Dog Insurance"
+parent = "petinsurancesubhead"
 url = "/dog-insurance"
 weight = 1
+[[menu.main]]
+identifier = "petinsurancesubhead"
+name = "Pet Insurance"
+parent = "petinsurance"
+title = "Pet Insurance"
+url = ""
+weight = 1
+[[menu.main]]
+identifier = "coveragesubhead"
+name = "Coverage"
+parent = "petinsurance"
+title = "Coverage"
+url = "/coverage"
+weight = 2
+[[menu.main]]
+name = "Pet Insurance 101"
+parent = "coveragesubhead"
+url = "/pet-insurance-101"
+weight = 1
+[[menu.main]]
+name = "How to Choose A Plan"
+parent = "coveragesubhead"
+url = "/choose-plan"
+weight = 2
+[[menu.main]]
+name = "24 Hour Vet Hotline"
+parent = "coveragesubhead"
+url = "/24-7-pet-helpline"
+weight = 3
+[[menu.main]]
+name = "FAQ"
+parent = "coveragesubhead"
+url = "/faq"
+weight = 4
+[[menu.main]]
+identifier = "premiumssubhead"
+name = "Premiums"
+parent = "petinsurance"
+title = "Premiums"
+url = ""
+weight = 3
+[[menu.main]]
+name = "Pet Insurance Cost"
+parent = "premiumssubhead"
+url = "/pet-insurance-cost"
+weight = 1
+[[menu.main]]
+name = "Understanding Pet Insurance Premiums"
+parent = "premiumssubhead"
+url = "/understanding-pet-insurance-premiums"
+weight = 2
 [[menu.main]]
 identifier = "petinsurance"
 name = "Pet Insurance"
